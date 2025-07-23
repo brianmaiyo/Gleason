@@ -1,0 +1,8 @@
+/.htaccess
+/.kiro
+/.vscode
+/browser-testing-report.md
+/minify-assets.ps1
+/optimize-images.ps1
+/performance-testing.md
+/robots.txt

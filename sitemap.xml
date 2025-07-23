@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Homepage -->
+  <url>
+    <loc>https://gleasonconstructionltd.com/</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/about.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/projects.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/contact.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Service Detail Pages -->
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html#general-building</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html#civil-engineering</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html#architectural-design</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html#cost-estimation</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html#plumbing-solar</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gleasonconstructionltd.com/pages/services.html#landscaping</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

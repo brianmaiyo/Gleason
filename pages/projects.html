@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects - Gleason Construction Ltd</title>
+    <meta name="description" content="View our portfolio of completed and ongoing construction projects across Kenya including Kisumu, Nakuru, Ndhiwa, and Eldoret.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.google.com;">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html" aria-label="Gleason Construction Ltd Home">
+                        <h1>Gleason Construction Ltd</h1>
+                    </a>
+                </div>
+                <nav class="main-navigation" aria-label="Main Navigation">
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-icon"></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="../index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About Us</a></li>
+                        <li class="nav-item"><a href="services.html">Services</a></li>
+                        <li class="nav-item current"><a href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Projects</h1>
+                <p>Explore our portfolio of completed and ongoing construction projects across Kenya.</p>
+            </div>
+        </section>
+
+        <section class="projects-section section-padding">
+            <div class="container">
+                <div class="projects-filter">
+                    <h2>Filter Projects</h2>
+                    <div class="filter-container">
+                        <div class="filter-group">
+                            <label for="location-filter">Location:</label>
+                            <select id="location-filter" class="filter-select">
+                                <option value="all">All Locations</option>
+                                <option value="kisumu">Kisumu</option>
+                                <option value="nakuru">Nakuru</option>
+                                <option value="ndhiwa">Ndhiwa</option>
+                                <option value="eldoret">Eldoret</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="type-filter">Project Type:</label>
+                            <select id="type-filter" class="filter-select">
+                                <option value="all">All Types</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="industrial">Industrial</option>
+                                <option value="infrastructure">Infrastructure</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="status-filter">Status:</label>
+                            <select id="status-filter" class="filter-select">
+                                <option value="all">All Status</option>
+                                <option value="completed">Completed</option>
+                                <option value="ongoing">Ongoing</option>
+                            </select>
+                        </div>
+                        <button id="clear-filters" class="btn btn-outline">Clear Filters</button>
+                    </div>
+                    <div class="active-filters" id="active-filters">
+                        <!-- Active filters will be displayed here -->
+                    </div>
+                </div>
+                
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project cards will be loaded here -->
+                    <p class="loading-message">Loading projects...</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Detail Modal -->
+        <div id="project-detail-modal" class="project-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-project-title">Project Title</h2>
+                    <button class="close-modal" aria-label="Close project details">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-gallery">
+                        <div class="main-image-container">
+                            <img id="modal-main-image" src="" alt="Project main image">
+                        </div>
+                        <div class="thumbnail-gallery" id="modal-thumbnails">
+                            <!-- Thumbnails will be loaded here -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info-section">
+                            <h3>Project Details</h3>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <span class="info-label">Location:</span>
+                                    <span id="modal-location" class="info-value">Location</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Type:</span>
+                                    <span id="modal-type" class="info-value">Type</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Status:</span>
+                                    <span id="modal-status" class="info-value">Status</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Year:</span>
+                                    <span id="modal-year" class="info-value">Year</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <h3>Description</h3>
+                            <p id="modal-description">Project description will appear here.</p>
+                        </div>
+                        <div class="info-section" id="modal-features-section">
+                            <h3>Key Features</h3>
+                            <ul id="modal-features" class="features-list">
+                                <!-- Features will be loaded here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="modal-contact-btn">Contact Us About This Project</button>
+                    <button class="btn btn-outline close-modal-btn">Close</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-overlay" class="modal-overlay"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-6 col-4">
+                    <h3>Gleason Construction Ltd</h3>
+                    <p>Delivering World-Class Construction Services</p>
+                    <p>Established 2022, Kisumu, Kenya</p>
+                </div>
+                <div class="col col-12 col-md-6 col-4 contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Phone: <a href="tel:+254701596894">+254 701 596 894</a>, <a href="tel:+254735335657">+254 735 335 657</a></p>
+                    <p>Email: <a href="mailto:gleasonlimited@gmail.com">gleasonlimited@gmail.com</a></p>
+                    <p>Address: Darling House, 1st Floor, Odera Street, Kisumu</p>
+                    <div class="map-container">
+                        <!-- Google Maps integration -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7573969502194!2d34.75089!3d-0.10254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa437ad4ac81d%3A0x2b7f7c087af62fdf!2sDarling%20House%2C%20Odera%20St%2C%20Kisumu!5e0!3m2!1sen!2ske!4v1627308567123!5m2!1sen!2ske" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Gleason Construction Ltd Office Location"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-12 col-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gleason Construction Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
